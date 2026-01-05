@@ -1,30 +1,41 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package shadow.practica;
 
-/**
- *
+/*
  * @author diana
  */
 public class Funciones {
+    public int Digitos(int _numero) {
+        int numero = Math.abs(_numero);
+        int contador = 0;
+        
+        while (numero > 0) {
+            numero = numero / 10;
+            contador++;
+        }
+        
+        return contador;
+    }
+    
     public String EsPositivo(int _numero) {
         if (_numero > 0) {
-            return "Es positivo";
+            return "Positivo";
         } else if (_numero<0) {
-            return "Es Negativo";
+            return "Negativo";
         } else {
-            return "Es cero";
+            return "Neutro";
         }
     }
     
     public String EsParONon(int _numero) {
         if (_numero % 2 == 0 ) {
-            return "Es par";
+            return "Par";
         } else{
-            return "Es Non";
+            return "Impar";
         }
+    }
+    
+    public double Absoluto(int _numero) {
+        return Math.abs(_numero);
     }
     
     public double Cuadrado(int _numero) {
@@ -35,10 +46,6 @@ public class Funciones {
         return Math.pow(_numero, 3);
     }
     
-    public double Absoluto(int _numero) {
-        return Math.abs(_numero);
-    }
-    
     public double RaizCuadrada(int _numero) {
         return Math.sqrt(_numero);
     }
@@ -46,4 +53,10 @@ public class Funciones {
     public double RaizCubica(int _numero) {
         return Math.cbrt(_numero);
     }
+    
+    public String Binario(int _numero) {
+        return Integer.toBinaryString(_numero);
+    }
+    
+    // Para hexadecimal es así: Integer.toHexString()
 }

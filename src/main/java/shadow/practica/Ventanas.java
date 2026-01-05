@@ -1,6 +1,6 @@
 package shadow.practica;
 
-/**
+/*
  * @author Knight
  */
 
