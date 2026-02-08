@@ -152,16 +152,16 @@ public class Numeros extends javax.swing.JFrame {
         jLabel7.setText("Su valor absoluto:");
 
         jLabel8.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel8.setText("Su cuadrado es:");
+        jLabel8.setText("Su cuadrado:");
 
         jLabel9.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel9.setText("Su cubo es:");
+        jLabel9.setText("Su cubo:");
 
         jLabel10.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel10.setText("Su raíz cuadrada es:");
+        jLabel10.setText("Su raíz cuadrada:");
 
         jLabel11.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel11.setText("Su raíz cúbica es:");
+        jLabel11.setText("Su raíz cúbica:");
 
         LbParidad.setForeground(new java.awt.Color(51, 51, 51));
         LbParidad.setText("-");
@@ -207,25 +207,18 @@ public class Numeros extends javax.swing.JFrame {
             .addGroup(PanelResultadoLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addGroup(PanelResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanelResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(PanelResultadoLayout.createSequentialGroup()
-                            .addGroup(PanelResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel4)
-                                .addComponent(jLabel5)
-                                .addComponent(jLabel6)
-                                .addComponent(jLabel7)
-                                .addComponent(jLabel8)
-                                .addComponent(jLabel14)
-                                .addComponent(jLabel9))
-                            .addGap(19, 19, 19))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelResultadoLayout.createSequentialGroup()
-                            .addComponent(jLabel10)
-                            .addGap(18, 18, 18)))
-                    .addGroup(PanelResultadoLayout.createSequentialGroup()
-                        .addComponent(jLabel11)
-                        .addGap(32, 32, 32))
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel14)
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel11)
                     .addComponent(jLabel12)
-                    .addComponent(jLabel13))
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel10))
+                .addGap(19, 19, 19)
                 .addGroup(PanelResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(LbHexadecimal)
                     .addComponent(LbAbsoluto)
@@ -289,16 +282,16 @@ public class Numeros extends javax.swing.JFrame {
                 .addGroup(PanelResultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
                     .addComponent(LbHexadecimal))
-                .addContainerGap(62, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
-        PanelContenedor.add(PanelResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 750, 450));
+        PanelContenedor.add(PanelResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 750, 430));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PanelContenedor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(PanelContenedor, javax.swing.GroupLayout.DEFAULT_SIZE, 770, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
